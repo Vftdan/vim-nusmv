@@ -1,3 +1,4 @@
+" Fork of:
 " WMNuSMV.vim plugin
 " Author:  Wannes Meert
 " Email:   wannes.meert@cs.kuleuven.be
@@ -8,14 +9,11 @@ if exists('s:loaded')
 endif
 let s:loaded = 1
 
-" ...
+let b:match_words = '\<case\>:\<esac\>'
 
 " Comments
-set commentstring=--%s
+setl commentstring=--%s
 
-" Cmd-B
-"unmap <D-b>
-"map <D-b> :!NuSMV %
 setl makeprg=NuSMV\ %
 setl errorformat=file\ %f:\ line\ %l:\ %m
 
