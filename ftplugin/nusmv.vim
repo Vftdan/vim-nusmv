@@ -4,11 +4,6 @@
 " Email:   wannes.meert@cs.kuleuven.be
 " Version: 0.1
 
-if exists('s:loaded')
-	finish
-endif
-let s:loaded = 1
-
 let b:match_words = '\<case\>:\<esac\>'
 
 " Comments
